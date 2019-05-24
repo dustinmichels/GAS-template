@@ -6,6 +6,8 @@ Includes some helper functions and polyfills that I frequently use.
 
 ## Setup
 
+### Install pacakges
+
 ```bash
 # Make sure clasp & typescript are installed globally
 npm install -g typescript
@@ -15,10 +17,18 @@ npm install -g @google/clasp
 npm i -S @types/google-apps-script
 ```
 
-Update `scriptId` in `.clasp.json`
-
-## Push
+### Configure Stuff
 
 ```bash
-clasp push
+# reset Git project
+rm -rf .git
+git init
+
+# create package.json
+npm init -y
 ```
+
+### Setup Clasp
+
+- `clasp login`
+- Update `scriptId` in `.clasp.json` with an existing google script
