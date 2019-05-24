@@ -32,3 +32,13 @@ npm init -y
 
 - `clasp login`
 - Update `scriptId` in `.clasp.json` with an existing google script
+
+## Development Notes
+
+Git is set to ignore changes to `.gitignore`, because I want to ignore my `package-lock.json` in the template, but not in projects copied from template. Confusing...
+
+To undo:
+
+```bash
+git update-index --no-assume-unchanged .gitignore
+```
